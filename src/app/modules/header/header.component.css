@@ -1,0 +1,81 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.logo-icon {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.avatar-icon {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.user-section {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 180px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f8ff;
+}
+
+.dropdown-username {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+.user-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-icon {
+  color: #007bff;
+}
+
+.dropdown-username {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-username strong {
+  color: #007bff;
+}
+
+mat-menu.custom-menu {
+  padding: 0;
+}

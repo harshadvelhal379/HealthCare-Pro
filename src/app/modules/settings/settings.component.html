@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<div class="modal-header border-bottom-0 pb-0">
+  <h5 class="modal-title">Settings</h5>
+</div>
+
+<div class="modal-body pt-2">
+  <form #settingsForm="ngForm" novalidate>
+    <!-- Display Name -->
+    <div class="mb-3">
+      <label for="displayName" class="form-label">Display Name</label>
+      <input
+        type="text"
+        id="displayName"
+        class="form-control form-control-sm"
+        placeholder="Dr. Sarah Johnson"
+        name="displayName"
+        ngModel
+        autocomplete="name"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control form-control-sm"
+        placeholder="you@example.com"
+        name="email"
+        ngModel
+        autocomplete="email"
+      />
+    </div>
+
+    <!-- Specialization -->
+    <div class="mb-3">
+      <label for="specialization" class="form-label">Specialization</label>
+      <select
+        id="specialization"
+        class="form-select form-select-sm"
+        name="specialization"
+        ngModel
+      >
+        <option value="" disabled selected>-- Select --</option>
+        <option value="cardiologist">Cardiologist</option>
+        <option value="neurologist">Neurologist</option>
+        <option value="dentist">Dentist</option>
+        <option value="general">General Physician</option>
+      </select>
+    </div>
+
+    <!-- Notification toggle -->
+    <div class="form-check form-switch mb-4">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="notifications"
+        name="notifications"
+        ngModel
+      />
+      <label class="form-check-label" for="notifications">
+        Enable Notifications
+      </label>
+    </div>
+
+    <!-- Password Section -->
+    <hr />
+    <h6 class="text-muted mb-3">Change Password</h6>
+
+    <div class="mb-3">
+      <label for="currentPassword" class="form-label">Current Password</label>
+      <input
+        type="password"
+        id="currentPassword"
+        class="form-control form-control-sm"
+        name="currentPassword"
+        ngModel
+        autocomplete="current-password"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="newPassword" class="form-label">New Password</label>
+      <input
+        type="password"
+        id="newPassword"
+        class="form-control form-control-sm"
+        name="newPassword"
+        ngModel
+        autocomplete="new-password"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="confirmPassword" class="form-label">Confirm New Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        class="form-control form-control-sm"
+        name="confirmPassword"
+        ngModel
+        autocomplete="new-password"
+      />
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer justify-content-between pt-2 border-top-0">
+  <button
+    type="button"
+    class="btn  btn-light text-muted"
+    (click)="close()"
+    aria-label="Cancel"
+  >
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="save()"
+    aria-label="Save Changes"
+  >
+    Save Changes
+  </button>
+</div>

@@ -1,0 +1,35 @@
+<div class="reports-container">
+  <h2 class="section-title">Medical Reports</h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-sm align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Patient</th>
+          <th>Report Type</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Doctor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let report of reports">
+          <td>{{ report.patient }}</td>
+          <td>{{ report.type }}</td>
+          <td>{{ report.date }}</td>
+          <td>
+            <span [ngClass]="{
+              'badge bg-success': report.status === 'Completed',
+              'badge bg-warning text-dark': report.status === 'Pending',
+              'badge bg-info text-dark': report.status === 'In Progress',
+              'badge bg-secondary': report.status === 'Reviewed'
+            }">
+              {{ report.status }}
+            </span>
+          </td>
+          <td>{{ report.doctor }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.patients-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.table {
+  font-size: 14px;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #555;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.rounded-circle {
+  object-fit: cover;
+}
+
+.btn-outline-secondary,
+.btn-outline-danger {
+  padding: 4px 8px;
+  font-size: 13px;
+}
+.patients-container {
+  padding: 24px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.table {
+  font-size: 14px;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
